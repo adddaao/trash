@@ -4,3 +4,5 @@ hobo*
 trash
 test
 trash.1
+.xmake/
+build/
