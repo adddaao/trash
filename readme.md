@@ -24,6 +24,14 @@ macOS / WSL：
 sh ./scripts/install.sh /usr/local
 ```
 
+GitHub 远程安装，适用于 macOS、WSL、Git Bash / MSYS2 等带 `sh`、`curl`、`tar`、`xmake` 的环境：
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/adddaao/trash/master/scripts/install.sh | sh -s -- "$HOME/.local"
+```
+
+这个方式不依赖 Windows PowerShell；如果是在原生 Windows 命令行中安装，仍建议使用 `scripts/install.ps1`，因为它会处理用户 PATH。
+
 也可以手动构建：
 
 ```sh
